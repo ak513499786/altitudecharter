@@ -19,7 +19,6 @@ app.get('/api/airports', (req, res) => {
             console.error('Error reading airport data:', err);
             return res.status(500).send('Server error');
         }
-
         try {
             const airportList = JSON.parse(data);
 
