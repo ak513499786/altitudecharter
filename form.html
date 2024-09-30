@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="tabs-container">
+      <!-- Tabs navigation (already provided by WordPress) -->
+      <ul
+        role="tablist"
+        class="ui-tabs-nav unordered-list ui-corner-all ui-helper-reset ui-helper-clearfix ui-widget-header"
+      >
+        <li
+          role="tab"
+          tabindex="0"
+          class="ui-tabs-tab list-items ui-corner-top ui-state-default ui-tab"
+          aria-controls="tab-66ed08aa55365-1"
+          aria-labelledby="ui-id-1"
+          aria-selected="true"
+          aria-expanded="true"
+        >
+          <a
+            href="#one-way-form"
+            tabindex="-1"
+            class="ui-tabs-anchor"
+            id="ui-id-1"
+            >One Way</a
+          >
+        </li>
+        <li
+          role="tab"
+          tabindex="-1"
+          class="ui-tabs-tab list-items ui-corner-top ui-state-default ui-tab ui-state-active"
+          aria-controls="tab-66ed08aa55365-2"
+          aria-labelledby="ui-id-2"
+          aria-selected="false"
+          aria-expanded="false"
+        >
+          <a
+            href="#round-trip-form"
+            tabindex="-1"
+            class="ui-tabs-anchor"
+            id="ui-id-2"
+            >Round Trip</a
+          >
+        </li>
+        <li
+          role="tab"
+          tabindex="-1"
+          class="ui-tabs-tab list-items ui-corner-top ui-state-default ui-tab"
+          aria-controls="tab-66ed08aa55365-3"
+          aria-labelledby="ui-id-3"
+          aria-selected="false"
+          aria-expanded="false"
+        >
+          <a
+            href="#multi-leg-form"
+            tabindex="-1"
+            class="ui-tabs-anchor"
+            id="ui-id-3"
+            >Multi-Leg</a
+          >
+        </li>
+      </ul>
+
+      <!-- Form for One Way -->
+      <div id="one-way-form" class="form">
+        <div class="form-group">
+          <label for="one-way-from">Departure Airport:</label>
+          <input
+            type="text"
+            id="one-way-from"
+            class="long-input"
+            name="from"
+            placeholder="New York Airport"
+          />
+          <div class="image-container">
+            <img src="./Group 3.png" class="image-fly" alt="" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="one-way-to">Arrival Airport:</label>
+          <input
+            type="text"
+            id="one-way-to"
+            name="to"
+            class="long-input"
+            placeholder="Dubai UAE Airport"
+          />
+          <div class="image-container">
+            <img src="./Group 4.png" class="image-land" alt="" />
+          </div>
+        </div>
+        <div class="form-group-flex">
+          <div class="form-group">
+            <label for="one-way-date">Departure Date:</label>
+            <input
+              type="date"
+              class="short-input"
+              id="one-way-date"
+              name="departure-date"
+            />
+            <div class="image-container">
+              <img src="./Vector (4).png" class="image-calender" alt="" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="one-way-time">Time:</label>
+            <input
+              type="time"
+              class="short-input-2"
+              id="one-way-time"
+              name="departure-time"
+            />
+          </div>
+          <div class="image-container">
+            <img src="./Vector (5).png" class="image-calender" alt="" />
+          </div>
+        </div>
+        <div class="form-group-flex">
+          <div class="form-group">
+            <label for="one-way-passengers">Passengers:</label>
+            <input
+              type="number"
+              class="short-input"
+              id="one-way-passengers"
+              name="departure-passengers"
+            />
+            <div class="image-container">
+              <img src="./Vector (6).png" class="image-passenger" alt="" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="one-way-type">Plane Type:</label>
+            <select
+              class="short-input-2"
+              id="one-way-type"
+              name="departure-type"
+            >
+              <option value="Turbo prop">Turbo prop</option>
+              <option value="Turbo prop">Light Jet</option>
+              <option value="Turbo prop">Mid-size Jet</option>
+              <option value="Turbo prop">Super-Mid</option>
+              <option value="Turbo prop">Heavy Jets</option>
+            </select>
+            <div class="image-container">
+              <img src="./arrow_drop_down.png" class="image-dropdown" alt="" />
+            </div>
+          </div>
+        </div>
+        <button class="submit-button" type="submit">Get Your Quote</button>
+      </div>
+
+      <!-- Form for Round Trip -->
+      <div id="round-trip-form" class="form">
+        <div class="form-group">
+          <label for="round-trip-from">Departure Airport:</label>
+          <input
+            type="text"
+            id="round-trip-from"
+            class="long-input"
+            name="from"
+            placeholder="Enter departure location"
+          />
+          <div class="image-container">
+            <img src="./Group 3.png" class="image-fly" alt="" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="round-trip-to">Arrival Airport:</label>
+          <input
+            type="text"
+            id="round-trip-to"
+            class="long-input"
+            name="to"
+            placeholder="Enter destination"
+          />
+          <div class="image-container">
+            <img src="./Group 4.png" class="image-land" alt="" />
+          </div>
+        </div>
+        <div class="form-group-flex">
+          <div class="form-group">
+            <label for="round-trip-departure-date">Departure Date:</label>
+            <input
+              type="date"
+              class="short-input"
+              id="round-trip-departure-date"
+              name="departure-date"
+            />
+            <div class="image-container">
+              <img src="./Vector (4).png" class="image-calender" alt="" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="round-trip-arrival-time">Time:</label>
+            <input
+              type="time"
+              class="short-input-2"
+              id="round-trip-arrival-time"
+              name="departure-time"
+            />
+            <div class="image-container">
+              <img src="./Vector (5).png" class="image-calender" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="form-group-flex">
+          <div class="form-group">
+            <label for="round-trip-passengers">Passengers:</label>
+            <input
+              type="number"
+              class="short-input"
+              id="round-trip-passengers"
+              name="departure-passengers"
+            />
+            <div class="image-container">
+              <img src="./Vector (6).png" class="image-passenger" alt="" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="round-trip-type">Plane Type:</label>
+            <select
+              class="short-input-2"
+              id="round-trip-type"
+              name="departure-type"
+            >
+              <option value="Turbo prop">Turbo prop</option>
+              <option value="Turbo prop">Light Jet</option>
+              <option value="Turbo prop">Mid-size Jet</option>
+              <option value="Turbo prop">Super-Mid</option>
+              <option value="Turbo prop">Heavy Jets</option>
+            </select>
+            <div class="image-container">
+              <img src="./arrow_drop_down.png" class="image-dropdown" alt="" />
+            </div>
+          </div>
+        </div>
+        <button class="submit-button" type="submit">Get Your Quote</button>
+      </div>
+
+      <!-- Form for Multi-Leg -->
+      <div id="multi-leg-form" class="form">
+        <h1 class="trip">TRIP 2</h1>
+        <div class="addstop">
+          <p class="addstoptxt">Add Stop</p>
+          <span class="addstop-text">+</span>
+        </div>
+        <div class="form-group-flex-2">
+          <div class="form-group">
+            <label for="leg-departure">Departure Airport:</label>
+            <input
+              type="text"
+              class="short-input-3"
+              id="leg-departure"
+              name="leg-departure"
+            />
+            <div class="image-container">
+              <img src="./Group 3.png" class="image-fly" alt="" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="leg-arrival">Arrival Airport:</label>
+            <input
+              type="text"
+              class="short-input-3"
+              id="leg-arrival"
+              name="leg-arrival"
+            />
+            <div class="image-container">
+              <img src="./Group 4.png" class="image-land" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="form-group-flex-2">
+          <div class="form-group">
+            <label for="leg-date">Departure Date:</label>
+            <input
+              type="date"
+              class="short-input-3"
+              id="leg-date"
+              name="leg-date"
+            />
+            <div class="image-container">
+              <img src="./Vector (4).png" class="image-calender" alt="" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="leg-time">Return Date:</label>
+            <input
+              type="date"
+              class="short-input-3"
+              id="leg-time"
+              name="leg-time"
+            />
+            <div class="image-container">
+              <img src="./Vector (4).png" class="image-calender" alt="" />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="trip-details">
+          <h1 class="trip-added">TRIP 1</h1>
+          <div class="edit">
+            <p class="addstoptxt">Edit</p>
+            <img
+              src="./edit_24dp_5F6368_FILL0_wght400_GRAD0_opsz24 1.svg"
+              class="images"
+              alt=""
+            />
+          </div>
+          <div class="container-1">
+            <div class="sub-container">
+              <p class="para">Departure from</p>
+              <p class="head">San Diego Airport</p>
+            </div>
+            <div class="sub-container-2">
+              <span class="span"></span>
+              <p class="to">To</p>
+              <span class="span"></span>
+            </div>
+            <div class="sub-container">
+              <p class="para">Arrival at</p>
+              <p class="head">New York Airport</p>
+            </div>
+          </div>
+          <div class="container-2">
+            <div>
+              <p class="para">Date</p>
+              <p class="head">12/08/2024</p>
+            </div>
+            <div>
+              <p class="para">Time</p>
+              <p class="head">7 : 00 AM</p>
+            </div>
+          </div>
+        </div>
+        <button class="submit-button" type="submit">Get Your Quote</button>
+      </div>
+    </div>
+  </body>
+</html>
